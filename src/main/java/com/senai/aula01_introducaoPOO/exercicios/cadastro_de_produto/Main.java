@@ -16,11 +16,9 @@ public class Main {
         System.out.println();
 
         produto1.exibirDetalhes();
-        produto1.atualizaEstoque();
         produto1.calculaValorEstoque();
 
         produto2.exibirDetalhes();
-        produto2.atualizaEstoque();
         produto2.calculaValorEstoque();
 
     }

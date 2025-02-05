@@ -12,7 +12,7 @@ public class Produto {
     }
 
     public void exibirDetalhes(){
-
+        System.out.println("O produto "+nome+" está R$"+preco+", temos "+quantidade+" disponivel em estoque.");
     }
     public void atualizaEstoque(int quantidadeRecebida){
         quantidade += quantidadeRecebida;
