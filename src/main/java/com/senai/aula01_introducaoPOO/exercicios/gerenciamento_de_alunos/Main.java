@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     static Aluno[] alunos = new Aluno[3];
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcoes = 0;
@@ -15,9 +16,10 @@ public class Main {
 
         switch (opcoes) {
             case 1:
-            exibirAlunos();
+                exibirAlunos();
                 break;
             case 2:
+                cadastroDeAlunos();
 
                 break;
             case 3:
@@ -26,6 +28,8 @@ public class Main {
             case 4:
                 System.out.println("Você saiu com exito");
                 break;
+            default:
+                System.out.println("Opção Invalida!");
         }
 
         Aluno aluno1 = new Aluno(
@@ -67,14 +71,24 @@ public class Main {
         aluno3.atualizaNota(2.4);
     }
 
-    public static void exibirAlunos(){
-        for (int i = 0; i <alunos.length ; i++) {
+    public static void exibirAlunos() {
+        for (int i = 0; i < alunos.length; i++) {
             alunos[i].exibirInformacoes();
         }
+
     }
-    public static void cadastroDeAlunos(){
+    public static void cadastroDeAlunos () {
+
+        System.out.println();
+
     }
+
+    public static void verificarAprovacao () {
+
+    }
+
 }
+
 
 
 
