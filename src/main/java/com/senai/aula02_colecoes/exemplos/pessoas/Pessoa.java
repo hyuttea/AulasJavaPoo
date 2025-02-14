@@ -9,7 +9,7 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public void falar(String frase){
+    public void falar(String frase) {
         System.out.println(nome + " falou: " + frase);
     }
 
