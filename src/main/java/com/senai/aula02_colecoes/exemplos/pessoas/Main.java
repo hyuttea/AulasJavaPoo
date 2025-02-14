@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa pessoa1 = new Pessoa("Vitoria", 18);
-        Pessoa pessoa2 = new Pessoa("Beatriz", 19);
-        Pessoa pessoa3 = new Pessoa("Kevilin", 20);
+        Pessoa pessoa1 = new Pessoa("Guilherme", 19);
+        Pessoa pessoa2 = new Pessoa("Marcelo", 19);
+        Pessoa pessoa3 = new Pessoa("Laura", 19);
 
         Pessoa[] matrizPessoas = new Pessoa[4];
 
@@ -19,7 +19,7 @@ public class Main {
 
         }
         matrizPessoas[0].falar("AAAAAAAAAA");
-        matrizPessoas[3] = new Pessoa("Camila", 22);
+        matrizPessoas[3] = new Pessoa("Oto", 22);
         System.out.println(matrizPessoas[3].nome);
 
         //possível, mas não viável
