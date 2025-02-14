@@ -2,6 +2,7 @@ package com.senai.aula02_colecoes.exemplos.pessoas;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -58,6 +59,14 @@ public class Main {
         System.out.println("-----teste filtro-----");
 
         listaFiltrada.forEach(System.out::println);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("preencha as informaçoes a seguir:");
+        System.out.println("Nome: ");
+        String nome = scanner.nextLine();
+        int idade = scanner.nextInt();
+        listaPessoas.add(new Pessoa(nome,idade));
+
 
 
     }
