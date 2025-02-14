@@ -54,7 +54,10 @@ public class Main {
 
         listaPessoas.forEach(System.out::println); // Vai na lista de pessoas e pegar cada pessoa e passar o println || :: - Mostra todos os metodos
 
-        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> pessoa.idade>=10).collect(Collectors.toList());//para cada objeo ele retorna cada stream e retornar | Existe varias ferramentas a usada é o filter(filtro)
+        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> pessoa.idade>=10).toList();//para cada objeo ele retorna cada stream e retornar | Existe varias ferramentas a usada é o filter(filtro)
+        System.out.println("-----teste filtro-----");
+
+        listaFiltrada.forEach(System.out::println);
 
 
     }
