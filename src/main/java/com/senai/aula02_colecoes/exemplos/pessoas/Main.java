@@ -1,6 +1,8 @@
 package com.senai.aula02_colecoes.exemplos.pessoas;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -49,6 +51,12 @@ public class Main {
 
         listaPessoas.add(0, pessoa3);
         listar(listaPessoas);
+
+        listaPessoas.forEach(System.out::println); // Vai na lista de pessoas e pegar cada pessoa e passar o println || :: - Mostra todos os metodos
+
+        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> pessoa.idade>=10).collect(Collectors.toList());//para cada objeo ele retorna cada stream e retornar | Existe varias ferramentas a usada é o filter(filtro)
+
+
     }
     public static void listar (ArrayList<Pessoa> lista){
         System.out.println("");
