@@ -1,4 +1,4 @@
-package com.senai.aula02_colecoes.exercicios;
+package com.senai.aula02_colecoes.exercicios.tarefa;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -53,7 +53,7 @@ public class Main {
     }
 
     private static void tarefaConcluida() {
-    listarTarefas();
+        listarTarefas();
         System.out.println("Escolha uma tarefa para marcar como concluida:");
     }
 
