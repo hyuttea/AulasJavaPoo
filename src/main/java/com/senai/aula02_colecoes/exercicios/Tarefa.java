@@ -7,13 +7,11 @@ public class Tarefa {
     public Tarefa(String nomeTarefa) {
         this.nomeTarefa = nomeTarefa;
         this.status = false; //tarefa começa falso
+
     }
 
     @Override
     public String toString() {
-        return "Tarefa{" +
-               "nomeTarefa='" + nomeTarefa + '\'' +
-               ", status=" + status +
-               '}';
+        return nomeTarefa+" - ["+ (status?"Concluido":"Pendente")+"]";
     }
 }
