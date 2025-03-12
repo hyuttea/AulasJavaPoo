@@ -1,4 +1,4 @@
-package com.senai.aula04_heranca.exemplos;
+package com.senai.aula04_heranca.exemplos.veiculo;
 
 public class Veiculo {
         String modelo;

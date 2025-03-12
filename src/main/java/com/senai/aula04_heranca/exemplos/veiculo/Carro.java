@@ -1,6 +1,6 @@
-package com.senai.aula04_heranca.exemplos;
+package com.senai.aula04_heranca.exemplos.veiculo;
 
-public class Carro extends Veiculo{
+public class Carro extends Veiculo {
     private int portas;
 
     public Carro(String modelo, int ano, int portas) {
