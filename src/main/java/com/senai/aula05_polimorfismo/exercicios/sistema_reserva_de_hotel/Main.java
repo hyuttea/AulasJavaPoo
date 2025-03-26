@@ -5,11 +5,7 @@ public class Main {
         Reserva reserva = new ReservaSimples("claudia",100,40,4,0,20);
         Reserva reserva1 = new ReservaVIP("Melissa",1000,100,7,0,500);
 
-
+        System.out.println("Custo da reserva simples: R$"+ reserva.calcularReserva());
+        System.out.println("Custo da reserva VIP: R$ "+ reserva1.calcularReserva());
     }
-    public static void mostrarReservas(Reserva reserva){
-        reserva.calcularReserva();
-
-    }
-
 }
