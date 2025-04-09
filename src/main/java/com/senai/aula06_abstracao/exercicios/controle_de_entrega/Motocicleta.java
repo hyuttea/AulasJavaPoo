@@ -6,4 +6,14 @@ public class Motocicleta extends Veiculos{
         super(velocidadeAtual, capacidadeMaxCarga, distanciaDestino);
     }
 
+    @Override
+    void verificarVelocidadeAtual() {
+        System.out.println("Motocicleta: Tempo acrescentado por conta do transito");
+    }
+
+    @Override
+    void verificarDistancia() {
+        System.out.println("Motocicleta: 20km para o destino");
+    }
+
 }

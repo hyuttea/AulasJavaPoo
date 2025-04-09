@@ -1,22 +1,25 @@
 package com.senai.aula06_abstracao.exercicios.controle_de_entrega;
 
 public abstract class Veiculos {
-    private int velocidadeAtual;
-    private int capacidadeMaxCarga;
-    private int distanciaDestino;
+    public int velocidadeAtual;
+     public static int capacidadeMaxCarga;
+     public int distanciaDestino;
 
     public Veiculos(int velocidadeAtual, int capacidadeMaxCarga, int distanciaDestino) {
         this.velocidadeAtual = velocidadeAtual;
         this.capacidadeMaxCarga = capacidadeMaxCarga;
         this.distanciaDestino = distanciaDestino;
     }
-    void verificarVelocidadeAtual(){
 
-    }
-    void verificarDistancia(){
+    abstract void verificarVelocidadeAtual();
 
+    abstract void verificarDistancia();
+
+    public void aumentarVelocidade(int valorIncremento){
+        velocidadeAtual += valorIncremento;
+        System.out.println("Velocidade aumentou para: "+ velocidadeAtual);
     }
-    void aumentarVelocidade(){
-        }
-    }
+
+}
+
 

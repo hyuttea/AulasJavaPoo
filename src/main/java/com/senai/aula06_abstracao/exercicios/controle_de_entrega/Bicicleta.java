@@ -7,4 +7,14 @@ public class Bicicleta extends Veiculos{
         super(velocidadeAtual, capacidadeMaxCarga, distanciaDestino);
     }
 
+    @Override
+    void verificarVelocidadeAtual() {
+        System.out.println("Bicicleta: voce chego ao seu destino");
+    }
+
+    @Override
+    void verificarDistancia() {
+        System.out.println("Bicicleta: Velocidade maxima 10km/h");
+    }
+
 }
