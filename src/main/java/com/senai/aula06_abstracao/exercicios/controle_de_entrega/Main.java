@@ -12,9 +12,9 @@ public class Main {
 
         listaDeVeiculos.forEach(veiculos-> {
 
-           veiculos.verificarVelocidadeAtual();
-           veiculos.verificarDistancia();
-           veiculos.aumentarVelocidade(40);
+           System.out.println(veiculos.verificarVelocidadeAtual());
+           System.out.println(veiculos.verificarDistancia());
+            System.out.println("Tempo estimado para a entrega: " + veiculos.calculoEntrega());
 
         });
     }

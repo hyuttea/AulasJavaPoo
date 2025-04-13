@@ -7,13 +7,7 @@ public class Motocicleta extends Veiculos{
     }
 
     @Override
-    void verificarVelocidadeAtual() {
-        System.out.println("Motocicleta: Tempo acrescentado por conta do transito");
+    double calculoEntrega() {
+        return ((double) distanciaDestino /velocidadeAtual)+5;
     }
-
-    @Override
-    void verificarDistancia() {
-        System.out.println("Motocicleta: 20km para o destino");
-    }
-
 }

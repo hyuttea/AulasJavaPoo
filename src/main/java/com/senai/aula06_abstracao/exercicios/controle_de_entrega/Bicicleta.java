@@ -8,13 +8,7 @@ public class Bicicleta extends Veiculos{
     }
 
     @Override
-    void verificarVelocidadeAtual() {
-        System.out.println("Bicicleta: voce chego ao seu destino");
+    double calculoEntrega() {
+        return ((double) distanciaDestino /velocidadeAtual);
     }
-
-    @Override
-    void verificarDistancia() {
-        System.out.println("Bicicleta: Velocidade maxima 10km/h");
-    }
-
 }
