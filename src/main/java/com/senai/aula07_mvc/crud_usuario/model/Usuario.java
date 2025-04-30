@@ -1,4 +1,4 @@
-package com.senai.aula07_mvc.model;
+package com.senai.aula07_mvc.crud_usuario.model;
 
 public abstract class Usuario {
     private String nome;
