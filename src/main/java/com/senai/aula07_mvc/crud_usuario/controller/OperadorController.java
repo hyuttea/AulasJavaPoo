@@ -5,14 +5,14 @@ import com.senai.aula07_mvc.crud_usuario.model.OperadorDAO;
 import java.util.List;
 
 public class OperadorController {
-    private OperadorDAO operadorDAO = new OperadorDAO();
+    OperadorDAO operadorDAO = new OperadorDAO(); //Instância de operadorDAO no controller de operador
 
-    public List<Operador> listarOperadores() {
+    public List<Operador> listarOperadores(){
         return operadorDAO.listar();
     }
 
-    public boolean cadastrarOperador(Operador operador) {
-        if (operador != null) {
+    public boolean cadastrarOperador(Operador operador){
+        if (operador != null){
             operadorDAO.salvar(operador);
             return true;
         }
@@ -34,4 +34,5 @@ public class OperadorController {
         }
         return false;
     }
+
 }
